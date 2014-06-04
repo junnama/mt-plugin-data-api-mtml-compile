@@ -1,0 +1,18 @@
+name: Data API MTML Compile
+id:   DataAPIMTMLCompile
+version: 0.1
+author_name: Alfasado Inc.
+author_link: http://alfasado.net/
+description: <__trans phrase="Add Data API Endpoint '/sites/:site_id/mtml_compile'.">
+l10n_class: DataAPIMTMLCompile::L10N
+applications:
+    data_api:
+        endpoints:
+            -
+                handler: DataAPIMTMLCompile::DataAPI::_handler_mtmlcompile
+                id: mtmlcompile
+                requires_login: 1
+                route: '/sites/:site_id/mtml_compile'
+                verb: POST
+                version: 1
+
